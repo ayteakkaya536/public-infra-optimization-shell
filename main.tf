@@ -189,7 +189,7 @@ resource "aws_instance" "worker" {
                 #!/bin/bash
                 ## sudo su -
                 ## replace the below with git hub credentials with XXXX
-                git clone https://XXXX:XXXX'!'@github.com/ayteakkaya536/piblic-infra-optimization-shell.git
+                git clone https://XXXX:XXXX'!'@github.com/ayteakkaya536/public-infra-optimization-shell.git
                 cd infra-optimization
                 sudo chmod 400 main-key.pem
                 sudo chmod 777 worker.sh
@@ -216,7 +216,7 @@ resource "aws_instance" "worker2" {
                 #!/bin/bash
                 ## sudo su -
                 ## replace the below with git hub credentials with XXXX
-                git clone https://XXXX:XXXX'!'@github.com/ayteakkaya536/piblic-infra-optimization-shell.git
+                git clone https://XXXX:XXXX'!'@github.com/ayteakkaya536/public-infra-optimization-shell.git
                 cd infra-optimization
                 sudo chmod 400 main-key.pem
                 sudo chmod 777 worker.sh
@@ -242,7 +242,7 @@ resource "aws_instance" "master" {
    user_data = <<-EOF
                 #!/bin/bash
                 ## replace the below with git hub credentials with XXXX
-                git clone https://XXXX:XXXX'!'@github.com/ayteakkaya536/piblic-infra-optimization-shell.git
+                git clone https://XXXX:XXXX'!'@github.com/ayteakkaya536/public-infra-optimization-shell.git
                 cd infra-optimization
                 sudo chmod 400 main-key.pem
                 sudo chmod 777 master.sh
